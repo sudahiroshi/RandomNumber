@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random Number</title>
+    <link rel="stylesheet" href="RandomNumber.css">
+    <script src="./js/nylon.js"></script>
+    <script src="./js/vcanvas.js"></script>
+    <script src="./js/vbtimer.js"></script>
+    <script src="./js/RandomNumber.js"></script>
+  </head>
+  <body>
+    <div id="contents">
+      <div id="panel">
+        <div>
+          <button type="button" id="start" class="normal">start</button>
+          <button type="button" id="clear" class="normal">clear</button>
+        </div>
+        <div>
+          <p>試行回数</p>
+          <button type="button" id="b02" class="size">1,000</button>
+          <button type="button" id="b03" class="size">10,000</button>
+          <button type="button" id="b04" class="size">100,000</button>
+        </div>
+      </div>
+      <div id="main">
+        <div id="area1" class="area">
+          <p>　一様乱数（Uniform Random Numbers）</p>
+          <canvas class="myCanvas" id="graph1" width="460" height="200"></canvas>
+          <canvas class="myCanvas" id="graph1b" width="460" height="200"></canvas>
+        </div>
+        
+        <div id="area2" class="area">
+          <p>　正規分布（Gauss Distribution）</p>
+          <canvas class="myCanvas" id="graph2" width="460" height="200"></canvas>
+          <canvas class="myCanvas" id="graph2b" width="460" height="200"></canvas>
+        </div>
+
+        <div id="area3" class="area">
+          <p>　指数分布（Exponential Distribution）</p>
+          <canvas class="myCanvas" id="graph3" width="460" height="200"></canvas>
+          <canvas class="myCanvas" id="graph3b" width="460" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

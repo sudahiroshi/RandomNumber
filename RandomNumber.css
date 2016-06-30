@@ -1,0 +1,54 @@
+body {
+  background-color: #fffffc;
+}
+#panel {
+  float: left;
+  margin-right: auto;
+  width: 180px;
+}
+#main {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.myCanvas {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+.area {
+  margin-top: 10px;
+  float: left;
+  position: relative;
+  width: 460px;
+  height: 200px;
+}
+
+#area1 {
+    background-color: #ffffd0;
+}
+#area2 {
+    background-color: #c0ffd0;
+}
+#area3 {
+    background-color: #d0e0ff;
+}
+
+#header {
+  width: 640px;
+}
+.normal {
+  width: 80px;
+  height: 60px;
+  font-size: 16pt;
+}
+.clear {
+  font-size: 14pt;
+  width: 160px;
+  height: 30px;
+}
+#initial {
+  background-color: #b0f0b0;
+}
