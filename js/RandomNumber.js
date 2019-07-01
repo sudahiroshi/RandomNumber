@@ -125,21 +125,21 @@ class RandomNumber {
 
 var guisetup = () => {
 	var nl = new nylon();
-	document.getElementById("start").addEventListener( "click", () => {
+	document.querySelector("#start").addEventListener( "click", () => {
 		nl.emit( "start", null );
 	});
-  document.getElementById("clear").addEventListener( "click", () => {
+  document.querySelector("#clear").addEventListener( "click", () => {
     nl.emit( "clear", null );
   });
-  document.getElementById("b02").addEventListener( "click", () => {
+  document.querySelector("#b02").addEventListener( "click", () => {
     nl.emit( "stop", null );
     nl.emit( "max", { "top":1000 } );
   });
-  document.getElementById("b03").addEventListener( "click", () => {
+  document.querySelector("#b03").addEventListener( "click", () => {
     nl.emit( "stop", null );
     nl.emit( "max", { "top":10000 } );
   });
-  document.getElementById("b04").addEventListener( "click", () => {
+  document.querySelector("#b04").addEventListener( "click", () => {
     nl.emit( "stop", null );
     nl.emit( "max", { "top":100000 } );
   });
@@ -152,18 +152,18 @@ window.addEventListener("load", function(e) {
   guisetup();
 
   x = new RandomNumber(
-    document.getElementById('graph1'),
-    document.getElementById('graph1b'),
+    document.querySelector('#graph1'),
+    document.querySelector('#graph1b'),
     "uniform"
    );
   x = new RandomNumber(
-    document.getElementById('graph2'),
-    document.getElementById('graph2b'),
+    document.querySelector('#graph2'),
+    document.querySelector('#graph2b'),
     "gauss"
    );
   x = new RandomNumber(
-    document.getElementById('graph3'),
-    document.getElementById('graph3b'),
+    document.querySelector('#graph3'),
+    document.querySelector('#graph3b'),
     "exponential"
    );
 
